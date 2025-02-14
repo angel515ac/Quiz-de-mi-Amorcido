@@ -1,0 +1,112 @@
+/* FUENTE MÁS BONITA */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #4a4a4a;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ANIMACIÓN PARA EL FONDO */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* HEXAGRAMA BMTH */
+.container::before {
+    content: "✶"; 
+    font-size: 150px;
+    color: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff4081;
+    animation: pulse 1.5s infinite;
+}
+
+/* MEJOR DISEÑO PARA INPUTS */
+input {
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ff80ab;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus {
+    border-color: #ff4081;
+    background: #ffebf0;
+    transform: scale(1.05);
+}
+
+/* EFECTO EN LOS ERRORES */
+.error-msg {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* BOTONES MEJORADOS */
+button {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff5a8a, #ff4081);
+    transform: scale(1.1);
+}
+
+/* EFECTO DE APARICIÓN */
+.hidden {
+    display: none;
+}
+
+/* ANIMACIÓN PARA EL TÍTULO */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para mi amorcito 💖</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>💖 Para mi amorcito 💖</h1>
+      <p>
+        Si logras responder todo correctamente, recibirás un regalo especial
+        hecho con mucho amor de Angelito. ¡Vamos, tú puedes! 🥰
+      </p>
+
+      <form id="quiz-form">
+        <label>📅 ¿Qué día fue nuestro primer mensaje de WhatsApp?</label>
+        <input type="text" id="q1" />
+        <span id="error-q1" class="error-msg"></span>
+
+        <label>💌 ¿Quién fue el primero en enviarlo?</label>
+        <input type="text" id="q2" />
+        <span id="error-q2" class="error-msg"></span>
+
+        <label>🎵 Angelito asoció una canción contigo, ¿cuál fue?</label>
+        <input type="text" id="q3" />
+        <span id="error-q3" class="error-msg"></span>
+
+        <label>💖 ¿Qué es lo que más te gusta de Angelito?</label>
+        <input type="text" id="q4" />
+        <span id="error-q4" class="error-msg"></span>
+
+        <label>💞 ¿Quién ama más a quién?</label>
+        <input type="text" id="q5" />
+        <span id="error-q5" class="error-msg"></span>
+
+        <button type="submit">Enviar Respuestas</button>
+      </form>
+
+      <div id="puzzle" class="hidden">
+        <h2>🧩 Última prueba: Adivina la frase de BMTH</h2>
+        <p>
+          Completa la siguiente frase para ganar tu sorpresa: <br />
+          *"My heart _____ for you"*
+        </p>
+        <input type="text" id="puzzle-answer" />
+        <span id="error-puzzle" class="error-msg"></span>
+        <button id="puzzle-submit">Enviar Respuesta</button>
+      </div>
+
+      <div id="message" class="hidden">
+        <h2>🌸 ¡Lo lograste, mi amorcito! 🌸</h2>
+        <p>
+          Estoy tan agradecido de haberte conocido, fue increíble que fue un 14
+          de diciembre en el concierto de nuestra banda favorita. <br /><br />
+          Estoy tan nervioso que me tiemblan los dedos que están cruzando tu
+          cabello, con esos encantadores labios que están hechos para besarlos.
+          Me pones de cabeza, tienes una voz que me deja sin aliento... Si este
+          es el cielo, entonces nena, no quiero saber del infierno. "El amor a
+          veces está en los pequeños detalles, escondido entre las notas de
+          nuestras canciones favoritas. Observa bien y toma la primera letra de
+          cada una... ¿Qué será lo que tratan de decirte?"
+          <br /><br />
+          Aquí tienes tu regalo especial:
+          <a
+            href="https://open.spotify.com/playlist/60XoAmB2zVMWHe3bYVE4HZ?si=76a0f86b51a844b5&pt=4dd680e7c147d63506d3c64d83cfcb1d"
+            target="_blank"
+            >🎵 Tu Playlist Especial 🎵</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
